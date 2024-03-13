@@ -1,0 +1,17 @@
+[tool.poetry]
+package-mode = false
+name = "microsoft-learn-badges"
+version = "0.1.0"
+description = "A robot for getting your Microsoft Learn badges as JSON"
+authors = ["Juan Vertiz <juanpablovertiz@neoris.com>"]
+readme = "README.md"
+license = "GPL-3.0"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+robotframework = "^7.0"
+robotframework-browser = "^18.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
