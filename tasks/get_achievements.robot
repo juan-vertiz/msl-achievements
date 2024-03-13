@@ -28,7 +28,7 @@ Get Achievements Data
         ...    title=${title}
         ...    type=${type}
         ...    date=${date}
-        ...    icon_url=https://learn.microsoft.com${icon_url}
+        ...    icon_url=${icon_url}
         ...    resource_url=${resource_url}
         Append To List    ${achievements_data}    ${data}
     END

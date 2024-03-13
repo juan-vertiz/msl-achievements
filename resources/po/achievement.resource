@@ -20,7 +20,7 @@ Get Achievement Date
 Get Achievement Icon URL
     [Arguments]    ${locator}
     ${achievement_icon_url}=    Get Attribute    ${locator} >> //img   src
-    RETURN    ${achievement_icon_url}
+    RETURN    https://learn.microsoft.com${achievement_icon_url}
 
 Get Resource URL
     [Arguments]    ${locator}
