@@ -1,8 +1,8 @@
 [tool.poetry]
 package-mode = false
-name = "microsoft-learn-badges"
+name = "microsoft-learn-achievements"
 version = "0.1.0"
-description = "A robot for getting your Microsoft Learn badges as JSON"
+description = "A robot for getting your Microsoft Learn achievements as JSON"
 authors = ["Juan Vertiz <juanpablovertiz@neoris.com>"]
 readme = "README.md"
 license = "GPL-3.0"
