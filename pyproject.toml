@@ -1,6 +1,6 @@
 [tool.poetry]
 package-mode = false
-name = "microsoft-learn-achievements"
+name = "msl-achievements"
 version = "0.1.0"
 description = "A robot for getting your Microsoft Learn achievements as JSON"
 authors = ["Juan Vertiz <juanpablovertiz@neoris.com>"]
