@@ -10,6 +10,14 @@ Task Teardown    Teardown
 
 *** Tasks ***
 Get Achievements
+    [Documentation]    Get Microsoft Learn Achievements as JSON data
+    ...
+    ...    This tasks gets achievements from Microsoft Learn and writes them to
+    ...    a JSON file called `achievements.json` in the output directory.
+    ...    
+    ...    Variables:
+    ...    - USER: The user's Microsoft Learn username as shown in the URL of their profile page.
+    ...    - TYPE: The type of achievements to get. Can be 'trophies', 'modules', 'course' and 'other'. If not given, all types are returned.
     ${achievements}=    Get Achievements
     ${achievements_data}=    Get Achievements Data    ${achievements}
     Write Achievements As JSON    ${achievements_data}
