@@ -44,6 +44,5 @@ Get Achievements Data
 
 Write Achievements As JSON
     [Arguments]    ${achievements}
-    ${data}=    Create Dictionary    achievements=${achievements}
-    ${json}=    Evaluate    json.dumps($data, indent=4)
+    ${json}=    Evaluate    json.dumps($achievements, indent=4)
     Create File    ${OUTPUT_DIR}/achievements.json    ${json}
