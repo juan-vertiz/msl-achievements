@@ -21,3 +21,8 @@ Get Achievement Icon URL
     [Arguments]    ${locator}
     ${achievement_icon_url}=    Get Attribute    ${locator} >> //img   src
     RETURN    ${achievement_icon_url}
+
+Get Resource URL
+    [Arguments]    ${locator}
+    ${resource_url}=    Get Attribute    ${locator} >> //a[@class='card-content-title']   href
+    RETURN    https://learn.microsoft.com${resource_url}

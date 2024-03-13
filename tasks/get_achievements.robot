@@ -23,11 +23,13 @@ Get Achievements Data
         ${type}=    Get Achievement Type    ${achievement}
         ${date}=    Get Achievement Date    ${achievement}
         ${icon_url}=    Get Achievement Icon URL    ${achievement}
+        ${resource_url}=    Get Resource URL    ${achievement}
         ${data}=    Create Dictionary
         ...    title=${title}
         ...    type=${type}
         ...    date=${date}
         ...    icon_url=https://learn.microsoft.com${icon_url}
+        ...    resource_url=${resource_url}
         Append To List    ${achievements_data}    ${data}
     END
     RETURN    ${achievements_data}
