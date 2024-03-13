@@ -4,23 +4,23 @@ Library    Browser
 *** Keywords ***
 Get Achievement Title
     [Arguments]    ${locator}
-    ${achievement_title}=    Get Text    ${locator} >> //a[@class='card-content-title']
-    RETURN    ${achievement_title}
+    ${title}=    Get Text    ${locator} >> //a[@class='card-content-title']
+    RETURN    ${title}
 
 Get Achievement Type
     [Arguments]    ${locator}
-    ${achievement_type}=    Get Text    ${locator} >> //p[@class='card-content-super-title']
-    RETURN    ${achievement_type}
+    ${type}=    Get Text    ${locator} >> //p[@class='card-content-super-title']
+    RETURN    ${type}
 
 Get Achievement Date
     [Arguments]    ${locator}
-    ${achievement_date}=    Get Text    ${locator} >> //time
-    RETURN    ${achievement_date}
+    ${date}=    Get Text    ${locator} >> //time
+    RETURN    ${date}
 
 Get Achievement Icon URL
     [Arguments]    ${locator}
-    ${achievement_icon_url}=    Get Attribute    ${locator} >> //img   src
-    RETURN    https://learn.microsoft.com${achievement_icon_url}
+    ${icon_url}=    Get Attribute    ${locator} >> //img   src
+    RETURN    https://learn.microsoft.com${icon_url}
 
 Get Resource URL
     [Arguments]    ${locator}
